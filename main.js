@@ -18,7 +18,6 @@ module.exports = {
      */
     convertPathToImage: function(path, callback){
         fs.lstat(path, function(err, stats) {
-            console.log(stats);
             if (err){
                 return callback(err,null); 
             };
